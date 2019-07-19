@@ -1,3 +1,4 @@
+import 'package:undefined_game/src/app/game_widget.dart';
 import 'package:undefined_game/src/pages/login/login_bloc.dart';
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class AppModule extends ModuleWidget {
   List<Dependency> get dependencies => [];
 
   @override
-  Widget get view => AppWidget();
+  Widget get view => MyGameWidget().widget;
 
   static Inject get to => Inject<AppModule>.of();
 }
